@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:puss_puss/pages/home.dart';
+import 'package:puss_puss/utils/theme/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: 'NeueMontreal'),
+        themeMode: ThemeMode.system,
+        theme: MAppTheme.lightTheme,
+        darkTheme: MAppTheme.darkTheme,
         title: 'Puss Puss',
         home: const HomePage());
   }
