@@ -5,6 +5,7 @@ import 'package:puss_puss/utils/theme/custom/checkbox_theme.dart';
 import 'package:puss_puss/utils/theme/custom/chip_theme.dart';
 import 'package:puss_puss/utils/theme/custom/elavated_button_theme.dart';
 import 'package:puss_puss/utils/theme/custom/outline_button_them.dart';
+import 'package:puss_puss/utils/theme/custom/input_decoration.dart';
 import 'package:puss_puss/utils/theme/custom/text_theme.dart';
 
 class MAppTheme {
@@ -22,7 +23,8 @@ class MAppTheme {
     bottomSheetTheme: MBottomSheetTheme.lightAppBarTheme,
     checkboxTheme: MCheckBoxTheme.lightAppBarTheme,
     chipTheme: MChipTheme.lightChipTheme,
-    outlinedButtonTheme: MOutlinedButtonTheme.lightOutlinedButtonTheme
+    outlinedButtonTheme: MOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: MInputDecorationTheme.lightInputDecorationTheme,
   );
 
 
@@ -39,5 +41,6 @@ class MAppTheme {
     checkboxTheme: MCheckBoxTheme.darkAppBarTheme,
     chipTheme: MChipTheme.darkChipTheme,
     outlinedButtonTheme: MOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: MInputDecorationTheme.darkInputDecorationTheme,
   );
 }
