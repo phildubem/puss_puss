@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
+
 class MCheckBoxTheme {
   MCheckBoxTheme._();
 
   static CheckboxThemeData lightAppBarTheme = CheckboxThemeData(
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.white;
+        return MColors.white;
       } else {
-        return Colors.black;
+        return MColors.accent;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.blue;
+        return MColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -25,14 +27,14 @@ class MCheckBoxTheme {
   static CheckboxThemeData darkAppBarTheme = CheckboxThemeData(
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.white;
+        return MColors.white;
       } else {
-        return Colors.black;
+        return MColors.primary;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.blue;
+        return MColors.primary;
       } else {
         return Colors.transparent;
       }

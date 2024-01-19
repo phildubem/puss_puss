@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
+
 class MOutlinedButtonTheme {
   MOutlinedButtonTheme._();
 
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style:OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: BorderSide(color: Colors.black),
+      foregroundColor: MColors.primary,
+      side: BorderSide(color: MColors.primary),
       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-      textStyle: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
+      textStyle: TextStyle(fontSize: 16, color: MColors.primary, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
     ),
   );
@@ -18,10 +20,10 @@ class MOutlinedButtonTheme {
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style:OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      side: BorderSide(color: Colors.black),
+      foregroundColor: MColors.white,
+      side: BorderSide(color: MColors.primary),
       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-      textStyle: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
+      textStyle: TextStyle(fontSize: 16, color: MColors.white, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
     ),
   );

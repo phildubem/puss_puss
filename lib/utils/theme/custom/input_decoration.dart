@@ -1,68 +1,70 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
+
 class MInputDecorationTheme {
   MInputDecorationTheme._();
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey,
-    suffixIconColor: Colors.grey,
+    prefixIconColor: MColors.grey,
+    suffixIconColor: MColors.grey,
 
-    labelStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    labelStyle: TextStyle().copyWith(fontSize: 14, color: MColors.primary),
+    hintStyle: TextStyle().copyWith(fontSize: 14, color: MColors.primary),
     errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
+    floatingLabelStyle: TextStyle().copyWith(color: MColors.primary.withOpacity(0.8)),
     border: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.grey),
     ),
     enabledBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.grey),
     ),
     focusedBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.black12),
+      borderSide: BorderSide(width: 1, color: MColors.primary),
     ),
     errorBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.red),
+      borderSide: BorderSide(width: 1, color: MColors.error),
     ),
     focusedErrorBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.orange),
+      borderSide: BorderSide(width: 1, color: MColors.warning),
     ),
   );
 
 
    static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey,
-    suffixIconColor: Colors.grey,
+    prefixIconColor: MColors.grey,
+    suffixIconColor: MColors.grey,
 
-    labelStyle: TextStyle().copyWith(fontSize: 14, color: Colors.white),
-    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.white),
+    labelStyle: TextStyle().copyWith(fontSize: 14, color: MColors.white),
+    hintStyle: TextStyle().copyWith(fontSize: 14, color: MColors.white),
     errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: TextStyle().copyWith(color: Colors.white.withOpacity(0.8)),
+    floatingLabelStyle: TextStyle().copyWith(color: MColors.white.withOpacity(0.8)),
     border: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.grey),
     ),
     enabledBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.grey),
     ),
     focusedBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.white),
+      borderSide: BorderSide(width: 1, color: MColors.white),
     ),
     errorBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.red),
+      borderSide: BorderSide(width: 1, color: MColors.error),
     ),
     focusedErrorBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: Colors.orange),
+      borderSide: BorderSide(width: 1, color: MColors.warning),
     ),
   );
 

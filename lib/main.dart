@@ -1,22 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:puss_puss/pages/home.dart';
-import 'package:puss_puss/utils/theme/theme.dart';
+import 'package:puss_puss/entry.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(PussApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.system,
-        theme: MAppTheme.lightTheme,
-        darkTheme: MAppTheme.darkTheme,
-        title: 'Puss Puss',
-        home: const HomePage());
-  }
-}

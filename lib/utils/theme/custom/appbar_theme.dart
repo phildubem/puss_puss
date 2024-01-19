@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
+
 class MAppBarTheme {
   MAppBarTheme._();
 
@@ -9,9 +11,9 @@ class MAppBarTheme {
       scrolledUnderElevation: 0,
       surfaceTintColor: Colors.transparent,
       backgroundColor: Colors.transparent,
-      iconTheme: IconThemeData(color: Colors.black, size: 24),
-      actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
-      titleTextStyle: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.w600),
+      iconTheme: IconThemeData(color: MColors.primary, size: 24),
+      actionsIconTheme: IconThemeData(color: MColors.primary, size: 24),
+      titleTextStyle: TextStyle(fontSize: 18, color: MColors.primary, fontWeight: FontWeight.w600),
   );
 
 
@@ -21,8 +23,8 @@ class MAppBarTheme {
       scrolledUnderElevation: 0,
       surfaceTintColor: Colors.transparent,
       backgroundColor: Colors.transparent,
-      iconTheme: IconThemeData(color: Colors.black, size: 24),
-      actionsIconTheme: IconThemeData(color: Colors.white, size: 24),
+      iconTheme: IconThemeData(color: MColors.primary, size: 24),
+      actionsIconTheme: IconThemeData(color: MColors.white, size: 24),
       titleTextStyle: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.w600),
   );
 }

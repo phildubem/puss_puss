@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
+
 class MBottomSheetTheme {
   MBottomSheetTheme._();
 
   static BottomSheetThemeData lightAppBarTheme = BottomSheetThemeData(
       showDragHandle: true,
-      modalBackgroundColor: Colors.white,
-      backgroundColor: Colors.white,
+      modalBackgroundColor: MColors.white,
+      backgroundColor: MColors.white,
       constraints: BoxConstraints(minWidth: double.infinity),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
   );
@@ -14,8 +16,8 @@ class MBottomSheetTheme {
 
   static BottomSheetThemeData darkAppBarTheme = BottomSheetThemeData(
       showDragHandle: true,
-      modalBackgroundColor: Colors.black,
-      backgroundColor: Colors.black,
+      modalBackgroundColor: MColors.primary,
+      backgroundColor: MColors.primary,
       constraints: BoxConstraints(minWidth: double.infinity),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
   );
