@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:puss_puss/utils/theme/custom/appbar_theme.dart';
 import 'package:puss_puss/utils/theme/custom/bottom_sheet_them.dart';
 import 'package:puss_puss/utils/theme/custom/checkbox_theme.dart';
@@ -8,6 +9,8 @@ import 'package:puss_puss/utils/theme/custom/outline_button_them.dart';
 import 'package:puss_puss/utils/theme/custom/input_decoration.dart';
 import 'package:puss_puss/utils/theme/custom/text_theme.dart';
 
+import '../constants/colors.dart';
+
 class MAppTheme {
   MAppTheme._();
 
@@ -15,7 +18,7 @@ class MAppTheme {
     useMaterial3: true,
     fontFamily: 'NeueMontreal',
     brightness: Brightness.light,
-    primaryColor: Colors.black,
+    primaryColor: MColors.primary,
     scaffoldBackgroundColor: Colors.white,
     textTheme: MTextTheme.lightTheme,
     elevatedButtonTheme: MElevatedButtonTheme.lightElevatedButtonTheme,
@@ -33,7 +36,7 @@ class MAppTheme {
     fontFamily: 'NeueMontreal',
     brightness: Brightness.dark,
     primaryColor: Colors.white,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: MColors.primary,
     textTheme: MTextTheme.darkTheme,
     elevatedButtonTheme: MElevatedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: MAppBarTheme.darkAppBarTheme,

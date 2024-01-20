@@ -10,9 +10,11 @@ class Msizes {
 
 
   static const double sxs = 1;
+  static const double sxxs = 2;
   static const double ssm = 6;
   static const double smd = 12;
   static const double snm = 24;
   static const double slg = 28;
   static const double sxl = 32;
+  static const double sxxl = 40;
 }

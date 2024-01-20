@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,29 +16,6 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
         resizeToAvoidBottomInset: true,
-        bottomNavigationBar: GNav(
-            iconSize: 25,
-            tabBorderRadius: 15,
-            backgroundColor: Color(0xff15062d),
-            color: Color(0xff6366F1).withOpacity(0.5),
-            activeColor: Color(0xff6366F1),
-            tabBackgroundColor: Color(0xff6366F1).withOpacity(0.08),
-            gap: 8,
-            padding: EdgeInsets.all(16),
-            tabs: const [
-              GButton(
-                icon: CupertinoIcons.bolt_fill,
-                text: 'Mine',
-              ),
-              GButton(
-                icon: CupertinoIcons.creditcard_fill,
-                text: 'Withdraw',
-              ),
-              GButton(
-                icon: CupertinoIcons.gear_solid,
-                text: 'Settings',
-              ),
-            ]),
         body: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(

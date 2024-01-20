@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:puss_puss/pages/home.dart';
+import 'package:get/get.dart';
+import 'package:puss_puss/features/auth/views/onboarding/onboarding.dart';
 import 'package:puss_puss/utils/theme/theme.dart';
 
 class PussApp extends StatelessWidget {
@@ -7,12 +8,12 @@ class PussApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.system,
         theme: MAppTheme.lightTheme,
         darkTheme: MAppTheme.darkTheme,
         title: 'Puss Puss',
-        home: const HomePage());
+        home: const OnBoardingscreen());
   }
 }

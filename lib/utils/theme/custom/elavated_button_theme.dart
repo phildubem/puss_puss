@@ -13,23 +13,24 @@ class MElevatedButtonTheme {
       disabledForegroundColor: MColors.grey,
       disabledBackgroundColor: MColors.grey,
       side: BorderSide(color: MColors.primary),
-      padding: EdgeInsets.symmetric(vertical: 15),
-      textStyle: TextStyle(fontSize: 16, color: MColors.white, fontWeight: FontWeight.w600),
+      padding: EdgeInsets.all(12),
+      textStyle: TextStyle(
+          fontSize: 16, color: MColors.primary, fontWeight: FontWeight.normal),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     ),
   );
 
-
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: MColors.white,
-      backgroundColor: MColors.primary,
+      foregroundColor: MColors.primary,
+      backgroundColor: MColors.white,
       disabledForegroundColor: MColors.grey,
       disabledBackgroundColor: MColors.grey,
-      side: BorderSide(color: MColors.primary),
-      padding: EdgeInsets.symmetric(vertical: 15),
-      textStyle: TextStyle(fontSize: 16, color: MColors.white, fontWeight: FontWeight.w600),
+      side: BorderSide(color: MColors.white),
+      padding: EdgeInsets.all(12),
+      textStyle: TextStyle(
+          fontSize: 16, color: MColors.white, fontWeight: FontWeight.normal),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     ),
   );

@@ -21,8 +21,8 @@ dependencies:
 
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
+  smooth_page_indicator: ^1.1.0
   flutter_native_splash: ^2.3.9
-  google_nav_bar: ^5.0.6
 
   get: ^4.6.6
   get_storage: ^2.1.1
@@ -39,19 +39,20 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-assets:
+  assets:
     - assets/icons/
     - assets/images/
  
 
-fonts:
-  - family: NeueMontreal
-    fonts:
-      - asset: assets/fonts/NeueMontreal-Bold.otf
-        weight: 700
-      - asset: assets/fonts/NeueMontreal-Light.otf
-        weight: 300
-      - asset: assets/fonts/NeueMontreal-Medium.otf
-        weight: 500
-      - asset: assets/fonts/NeueMontreal-Regular.otf
-        weight: 400
+  fonts:
+    - family: NeueMontreal
+      fonts:
+        - asset: assets/fonts/NeueMontreal-Bold.otf
+          weight: 700
+        - asset: assets/fonts/NeueMontreal-Light.otf
+          weight: 300
+        - asset: assets/fonts/NeueMontreal-Medium.otf
+          weight: 500
+        - asset: assets/fonts/NeueMontreal-Regular.otf
+          weight: 400
+
