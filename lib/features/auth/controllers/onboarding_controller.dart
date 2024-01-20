@@ -17,6 +17,7 @@ class OnBoardingController extends GetxController {
   }
 
   void nextPage() {
+    // ignore: unrelated_type_equality_checks
     if (currentPageIndex == 2) {
       Get.to(LoginScreen());
     } else {

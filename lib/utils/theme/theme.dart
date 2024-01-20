@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:puss_puss/utils/theme/custom/appbar_theme.dart';
 import 'package:puss_puss/utils/theme/custom/bottom_sheet_them.dart';
 import 'package:puss_puss/utils/theme/custom/checkbox_theme.dart';

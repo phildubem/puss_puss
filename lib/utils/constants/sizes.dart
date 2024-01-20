@@ -17,4 +17,5 @@ class Msizes {
   static const double slg = 28;
   static const double sxl = 32;
   static const double sxxl = 40;
+  static const double sxxxl = 50;
 }
