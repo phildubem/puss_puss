@@ -21,15 +21,16 @@ class LoginScreen extends StatelessWidget {
         child: Padding(
           padding: MSpacingStyle.padding50pxTop,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image(height: 120, image: AssetImage(MImages.logo)),
-                  Text(MTexts.hi,
+                  Text(MTexts.loginTitle,
                       style: Theme.of(context).textTheme.headlineMedium),
                   SizedBox(height: Msizes.xxs),
-                  Text(MTexts.hi,
+                  Text(MTexts.loginSubTitle,
                       style: Theme.of(context).textTheme.bodyMedium),
                 ],
               ),
@@ -67,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: Msizes.nm),
+                      SizedBox(height: Msizes.md),
                       SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
@@ -102,7 +103,7 @@ class LoginScreen extends StatelessWidget {
                           endIndent: 60)),
                 ],
               ),
-              SizedBox(height: Msizes.lg),
+              SizedBox(height: Msizes.xl),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
