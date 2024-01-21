@@ -13,10 +13,10 @@ class MElevatedButtonTheme {
       disabledForegroundColor: MColors.grey,
       disabledBackgroundColor: MColors.grey,
       side: BorderSide(color: MColors.primary),
-      padding: EdgeInsets.all(12),
+      padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
       textStyle: TextStyle(
           fontSize: 16, color: MColors.primary, fontWeight: FontWeight.normal),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
     ),
   );
 
@@ -28,10 +28,10 @@ class MElevatedButtonTheme {
       disabledForegroundColor: MColors.grey,
       disabledBackgroundColor: MColors.grey,
       side: BorderSide(color: MColors.white),
-      padding: EdgeInsets.all(12),
+      padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
       textStyle: TextStyle(
           fontSize: 16, color: MColors.white, fontWeight: FontWeight.normal),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
     ),
   );
 }

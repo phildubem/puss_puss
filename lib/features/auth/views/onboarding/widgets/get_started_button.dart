@@ -12,7 +12,6 @@ class GetStartedButton extends StatelessWidget {
   final controller = Get.put(OnBoardingController());
   @override
   Widget build(BuildContext context) {
-    
     return Positioned(
         bottom: MDeviceUtils.getBottomNavigationBarHeight() + 10,
         right: Msizes.xl,
@@ -21,7 +20,8 @@ class GetStartedButton extends StatelessWidget {
           child: Row(
             children: [
               Obx(() => Text(controller.currentPageIndex.value == 2
-                        ? 'Get Started' : 'Next')),
+                  ? 'Get Started'
+                  : 'Next')),
               SizedBox(width: Msizes.sxxs),
               Icon(Iconsax.arrow_right_3)
             ],

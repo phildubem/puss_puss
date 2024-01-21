@@ -17,9 +17,8 @@ class OnBoardingController extends GetxController {
   }
 
   void nextPage() {
-    // ignore: unrelated_type_equality_checks
-    if (currentPageIndex == 2) {
-      Get.to(LoginScreen());
+    if (currentPageIndex.value == 2) {
+      Get.offAll(LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

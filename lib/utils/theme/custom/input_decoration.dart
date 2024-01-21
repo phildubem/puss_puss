@@ -7,8 +7,8 @@ class MInputDecorationTheme {
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: MColors.grey,
-    suffixIconColor: MColors.grey,
+    prefixIconColor: MColors.primary,
+    suffixIconColor: MColors.primary,
 
     labelStyle: TextStyle().copyWith(fontSize: 14, color: MColors.primary),
     hintStyle: TextStyle().copyWith(fontSize: 14, color: MColors.primary),
@@ -16,11 +16,11 @@ class MInputDecorationTheme {
     floatingLabelStyle: TextStyle().copyWith(color: MColors.primary.withOpacity(0.8)),
     border: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: MColors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.primary),
     ),
     enabledBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: MColors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.primary),
     ),
     focusedBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
@@ -39,8 +39,8 @@ class MInputDecorationTheme {
 
    static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: MColors.grey,
-    suffixIconColor: MColors.grey,
+    prefixIconColor: MColors.white,
+    suffixIconColor: MColors.white,
 
     labelStyle: TextStyle().copyWith(fontSize: 14, color: MColors.white),
     hintStyle: TextStyle().copyWith(fontSize: 14, color: MColors.white),
@@ -48,11 +48,11 @@ class MInputDecorationTheme {
     floatingLabelStyle: TextStyle().copyWith(color: MColors.white.withOpacity(0.8)),
     border: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: MColors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.white),
     ),
     enabledBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: MColors.grey),
+      borderSide: BorderSide(width: 1, color: MColors.white),
     ),
     focusedBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(15),
