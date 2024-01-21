@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:puss_puss/utils/constants/colors.dart';
+import 'package:puss_puss/utils/helpers/helper_function.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -11,6 +13,8 @@ class MSignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = MHelperFunctions.isDarkMode(context);
+
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: Msizes.xl),
@@ -61,7 +65,7 @@ class MSignupForm extends StatelessWidget {
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-            SizedBox(height: Msizes.xs),
+            SizedBox(height: Msizes.smd),
             Row(
               children: [
                 Row(
@@ -70,25 +74,78 @@ class MSignupForm extends StatelessWidget {
                         width: Msizes.snm,
                         height: Msizes.snm,
                         child: Checkbox(value: true, onChanged: (value) {})),
-                    Text(MTexts.rememberMe),
+                    SizedBox(width: Msizes.xxs),
+                    Text.rich(
+                      TextSpan(children: [
+                        TextSpan(
+                            text: '${MTexts.iAgreeTo} ',
+                            style: Theme.of(context).textTheme.bodySmall),
+                        TextSpan(
+                            text: '${MTexts.the} ',
+                            style: Theme.of(context).textTheme.bodySmall),
+                        TextSpan(
+                            text: '${MTexts.privacyPolicy} ',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .apply(
+                                    color:
+                                        dark ? MColors.white : MColors.primary,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: dark
+                                        ? MColors.white
+                                        : MColors.primary)),
+                        TextSpan(
+                            text: '${MTexts.and} ',
+                            style: Theme.of(context).textTheme.bodySmall),
+                        TextSpan(
+                            text: '${MTexts.termsOfUse} ',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .apply(
+                                    color:
+                                        dark ? MColors.white : MColors.primary,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: dark
+                                        ? MColors.white
+                                        : MColors.primary)),
+                      ]),
+                    ),
                   ],
                 ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(MTexts.forgotPassword),
-                )
               ],
             ),
-            SizedBox(height: Msizes.sm),
+            SizedBox(height: Msizes.xl),
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(MTexts.signIn))),
-            SizedBox(height: Msizes.md),
-            SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
                     onPressed: () {}, child: Text(MTexts.createAccount))),
+
+            //Signin Button on the sign up page
+            //SizedBox(height: Msizes.md),
+            // SizedBox(
+            //   width: double.infinity,
+            //   child: OutlinedButton(
+            //     onPressed: () {},
+            //     child: Text.rich(
+            //       TextSpan(
+            //         children: [
+            //           TextSpan(
+            //             text: '${MTexts.alreadyHave} ',
+            //             style: Theme.of(context).textTheme.bodyMedium!.apply(
+            //                 color: dark ? MColors.white : MColors.primary),
+            //           ),
+            //           TextSpan(
+            //             text: ' ${MTexts.signIn}',
+            //             style: Theme.of(context).textTheme.titleMedium!.apply(
+            //                 color: dark ? MColors.white : MColors.primary),
+            //           ),
+            //         ],
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

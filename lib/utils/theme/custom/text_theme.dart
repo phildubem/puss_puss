@@ -25,7 +25,7 @@ class MTextTheme {
     bodySmall: TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w300,
-        color: MColors.primary.withOpacity(0.5)),
+        color: MColors.primary),
     labelLarge: TextStyle().copyWith(
         fontSize: 14, fontWeight: FontWeight.normal, color: MColors.primary),
     labelMedium: TextStyle().copyWith(
@@ -58,7 +58,7 @@ class MTextTheme {
     bodySmall: TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w300,
-        color: Colors.white.withOpacity(0.5)),
+        color: Colors.white.withOpacity(0.9)),
     labelLarge: TextStyle().copyWith(
         fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white),
     labelMedium: TextStyle().copyWith(

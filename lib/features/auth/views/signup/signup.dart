@@ -22,7 +22,7 @@ class SignupScreen extends StatelessWidget {
               Text(MTexts.signupTitle,
                   style: Theme.of(context).textTheme.headlineMedium),
               MSignupForm(),
-              SizedBox(height: Msizes.xl),
+              SizedBox(height: Msizes.sm),
               MFormDivider(dividerText: MTexts.orSignUpWith),
               SizedBox(height: Msizes.xl),
               MSocialButton(),

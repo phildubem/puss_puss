@@ -27,7 +27,7 @@ class MSocialButton extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: Msizes.sm),
+        SizedBox(width: Msizes.nm),
         Container(
           decoration: BoxDecoration(
               border: Border.all(color: MColors.grey),
