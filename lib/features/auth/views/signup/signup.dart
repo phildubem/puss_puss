@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:puss_puss/common/styles/spacing_styles.dart';
-import 'package:puss_puss/features/auth/views/login/widgets/login_form.dart';
-import 'package:puss_puss/features/auth/views/login/widgets/login_header.dart';
+import 'package:puss_puss/features/auth/views/signup/widgets/signup_form.dart';
+import 'package:puss_puss/utils/constants/sizes.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 
 import '../../../../common/widgets/form_divider.dart';
 import '../../../../common/widgets/social_button.dart';
-import '../../../../utils/constants/sizes.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: MSpacingStyle.padding50pxTop,
+          padding: EdgeInsets.all(Msizes.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              MLoginHeader(),
-              MLoginForm(),
-              MFormDivider(dividerText: MTexts.orSignInWith),
+              Text(MTexts.signupTitle,
+                  style: Theme.of(context).textTheme.headlineMedium),
+              MSignupForm(),
+              SizedBox(height: Msizes.xl),
+              MFormDivider(dividerText: MTexts.orSignUpWith),
               SizedBox(height: Msizes.xl),
               MSocialButton(),
             ],
@@ -33,10 +33,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
