@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/features/auth/views/signup/widgets/signup_form.dart';
 import 'package:puss_puss/utils/constants/sizes.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
@@ -12,7 +14,9 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+          leading: IconButton(
+              onPressed: () => Get.back(), icon: Icon(Iconsax.arrow_left_2))),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(Msizes.xl),

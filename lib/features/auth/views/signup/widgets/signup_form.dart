@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:puss_puss/features/auth/views/verify+/verify_email.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 import 'package:puss_puss/utils/helpers/helper_function.dart';
 
@@ -120,7 +122,7 @@ class MSignupForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(MTexts.createAccount))),
+                    onPressed: () => Get.to(() => VerifyEmailScreen()), child: Text(MTexts.createAccount))),
 
             //Signin Button on the sign up page
             //SizedBox(height: Msizes.md),
