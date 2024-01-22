@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/features/auth/views/signup/signup.dart';
+import 'package:puss_puss/utils/nav.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -51,7 +52,7 @@ class MLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(MTexts.signIn))),
+                    onPressed: () => Get.to(() => NavBar()), child: Text(MTexts.signIn))),
             SizedBox(height: Msizes.md),
             SizedBox(
                 width: double.infinity,
