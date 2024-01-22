@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:puss_puss/features/auth/views/login/login.dart';
 import 'package:puss_puss/features/auth/views/verify+/success.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
+import 'package:puss_puss/utils/helpers/helper_function.dart';
 
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -17,7 +19,8 @@ class VerifyEmailScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-              onPressed: () => Get.back(), icon: Icon(Iconsax.close_square))
+              onPressed: () => Get.offAll(() => LoginScreen()),
+              icon: Icon(Iconsax.close_square))
         ],
       ),
       body: SingleChildScrollView(
@@ -26,17 +29,19 @@ class VerifyEmailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(height: 240, image: AssetImage(MImages.logo)),
+              Image(
+                  width: MHelperFunctions.screenWidth() * 0.6,
+                  image: AssetImage(MImages.logo)),
               Text(MTexts.verifyEmailTitle,
-              textAlign: TextAlign.center,
+                  textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.headlineMedium),
               SizedBox(height: Msizes.xxs),
               Text(MTexts.verifyEmailSubTitle,
-              textAlign: TextAlign.center,
+                  textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyMedium),
               SizedBox(height: Msizes.md),
               Text('hello@pusspuss.com ',
-              textAlign: TextAlign.center,
+                  textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodySmall),
               SizedBox(height: Msizes.xl),
               SizedBox(

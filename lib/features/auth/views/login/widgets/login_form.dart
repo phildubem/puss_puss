@@ -5,6 +5,7 @@ import 'package:puss_puss/features/auth/views/signup/signup.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_config/forgot_password.dart';
 
 class MLoginForm extends StatelessWidget {
   const MLoginForm({
@@ -41,7 +42,7 @@ class MLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(MTexts.forgotPassword),
                 )
               ],

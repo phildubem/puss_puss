@@ -15,6 +15,7 @@ class MTexts {
   static const String the = 'the';
   static const String mContinue = 'Continue';
   static const String enter = 'Enter';
+  static const String done = 'Done';
   
 
   static const String firstName = 'First Name';
