@@ -15,7 +15,7 @@ class TopSkipButton extends StatelessWidget {
     final controller = Get.put(OnBoardingController());
     return Positioned(
         top: MDeviceUtils.getAppBarHeight(),
-        right: Msizes.xl,
+        right: Msizes.sm,
         child: TextButton(
             onPressed: () => OnBoardingController.instance.skipPage(),
             child: Obx(() => Text(

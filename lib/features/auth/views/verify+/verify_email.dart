@@ -6,6 +6,7 @@ import 'package:puss_puss/features/auth/views/verify+/success.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 import 'package:puss_puss/utils/helpers/helper_function.dart';
 
+import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
@@ -14,13 +15,16 @@ class VerifyEmailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool dark = MHelperFunctions.isDarkMode(context);
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
               onPressed: () => Get.offAll(() => LoginScreen()),
-              icon: Icon(Iconsax.close_square))
+              icon: Icon(Iconsax.close_square),
+              color: dark ? MColors.white : MColors.primary)
         ],
       ),
       body: SingleChildScrollView(

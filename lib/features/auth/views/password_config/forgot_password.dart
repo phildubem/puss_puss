@@ -3,7 +3,9 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/features/auth/views/password_config/reset_password.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
+import 'package:puss_puss/utils/helpers/helper_function.dart';
 
+import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
@@ -11,10 +13,14 @@ class ForgotPasswordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool dark = MHelperFunctions.isDarkMode(context);
+
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () => Get.back(), icon: Icon(Iconsax.arrow_left_2)),
+            onPressed: () => Get.back(),
+            icon: Icon(Iconsax.arrow_left_2,
+                color: dark ? MColors.white : MColors.primary)),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -30,7 +36,9 @@ class ForgotPasswordScreen extends StatelessWidget {
               SizedBox(height: Msizes.sxl),
               TextFormField(
                 decoration: InputDecoration(
-                    prefixIcon: Icon(Iconsax.direct), labelText: MTexts.email),
+                    prefixIcon: Icon(Iconsax.direct,
+                        color: dark ? MColors.white : MColors.primary),
+                    labelText: MTexts.email),
               ),
               SizedBox(height: Msizes.sxl),
               SizedBox(
