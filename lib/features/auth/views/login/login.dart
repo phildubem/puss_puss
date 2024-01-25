@@ -4,8 +4,8 @@ import 'package:puss_puss/features/auth/views/login/widgets/login_form.dart';
 import 'package:puss_puss/features/auth/views/login/widgets/login_header.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 
-import '../../../../common/widgets/form_divider.dart';
-import '../../../../common/widgets/social_button.dart';
+import '../../../../common/widgets/login_signup/form_divider.dart';
+import '../../../../common/widgets/login_signup/social_button.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class LoginScreen extends StatelessWidget {

@@ -7,6 +7,8 @@ class Msizes {
   static const double nm = 16;
   static const double lg = 18;
   static const double xl = 20;
+  static const double xxl = 30;
+  static const double xxxl = 30;
 
 
   static const double sxs = 1;

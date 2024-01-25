@@ -4,7 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 import 'package:puss_puss/utils/helpers/helper_function.dart';
 
-import '../../../../common/widgets/success_screen.dart';
+import '../../../../common/widgets/success_screen/success_screen.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 
