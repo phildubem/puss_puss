@@ -4,9 +4,6 @@ import 'package:puss_puss/utils/constants/sizes.dart';
 
 import '../../../../../common/widgets/main_screens/notification_scroll_container.dart';
 import '../../../../../common/widgets/main_screens/primary_header.dart';
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/device/device_utility.dart';
-import '../../../../../utils/helpers/helper_function.dart';
 //import '../../../../../utils/helpers/helper_function.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   MHomeAppBar(),
-                  SizedBox(height: Msizes.smd),
+                  SizedBox(height: Msizes.sxxs),
                   MNotificationsScrollBar(),
                   SizedBox(height: Msizes.smd),
                 ],

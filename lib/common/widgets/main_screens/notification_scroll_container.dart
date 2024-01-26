@@ -55,10 +55,13 @@ class MNotificationsScrollBar extends StatelessWidget {
                         child: Image(image: AssetImage(MImages.logo)),
                       ),
                       SizedBox(width: Msizes.sm),
-                      Text('Follow Pusspuss on Twitter!')
+                      Text('Follow Pusspuss on Twitter!',
+                          style: Theme.of(context).textTheme.labelLarge,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis)
                     ],
                   ),
-                  Text('1/6')
+                  Text('${index + 1}/6')
                 ],
               ),
             );
