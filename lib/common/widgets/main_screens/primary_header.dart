@@ -16,11 +16,11 @@ class MPrimaryHeader extends StatelessWidget {
 
     return CurvedEdgeWidget(
       child: Container(
-        color: dark ? MColors.primary : MColors.primary.withOpacity(0.3),
+        color: dark ? MColors.primary : Colors.deepPurple[200],
         padding: EdgeInsets.all(0),
         child: SizedBox(
           // Controls height of top curved container
-          height: 230,
+          height: MHelperFunctions.screenWidth() * 0.57,
           child: Stack(
             children: [
               // Background Custom Shapes (Circular Contianer)

@@ -1,4 +1,4 @@
-class MRateCalculator {
+class MRates {
   static double totalHashRate() {
     double hashRate = getHash() / getRate();
     return hashRate;

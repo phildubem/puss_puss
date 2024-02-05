@@ -23,9 +23,12 @@ dependencies:
   cupertino_icons: ^1.0.6
   smooth_page_indicator: ^1.1.0
   flutter_native_splash: ^2.3.9
+  carousel_slider: ^4.2.1
+  slide_action: ^0.0.2
 
   get: ^4.6.6
   get_storage: ^2.1.1
+  shared_preferences: ^2.2.2
 
 
 

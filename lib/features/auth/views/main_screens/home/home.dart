@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:puss_puss/common/widgets/main_screens/mine_button.dart';
 import 'package:puss_puss/features/auth/views/main_screens/home/widgets/home_appbar.dart';
 import 'package:puss_puss/utils/constants/sizes.dart';
 
@@ -23,10 +24,13 @@ class HomeScreen extends StatelessWidget {
                   MHomeAppBar(),
                   SizedBox(height: Msizes.sxxs),
                   MNotificationsScrollBar(),
-                  SizedBox(height: Msizes.smd),
+                  SizedBox(height: Msizes.sxxs),
+                  
                 ],
               ),
             ),
+            
+            MMiningButton()
           ],
         ),
       ),
