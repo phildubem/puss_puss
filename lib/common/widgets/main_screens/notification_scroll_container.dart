@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../../utils/device/device_utility.dart';
 import '../../../utils/helpers/helper_function.dart';
 
 class MNotificationsScrollBar extends StatelessWidget {
@@ -20,7 +19,7 @@ class MNotificationsScrollBar extends StatelessWidget {
     final dark = MHelperFunctions.isDarkMode(context);
     return Container(
       height: 45,
-      width: MDeviceUtils.getScreenWidth(context),
+      width: MHelperFunctions.screenWidth() * 0.92,
       margin: EdgeInsets.all(Msizes.md),
       padding: EdgeInsets.all(Msizes.xxs),
       decoration: BoxDecoration(
@@ -33,7 +32,7 @@ class MNotificationsScrollBar extends StatelessWidget {
           itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) =>
               Container(
             height: 45,
-            width: MHelperFunctions.screenWidth() * 0.99,
+            width: MHelperFunctions.screenWidth(),
             padding: EdgeInsets.only(
               left: Msizes.xs,
               right: Msizes.xs,

@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:puss_puss/utils/constants/sizes.dart';
 import 'package:slide_action/slide_action.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 
-import '../../../utils/helpers/helper_function.dart';
+import '../../../../../utils/helpers/helper_function.dart';
 
 class MMiningButton extends StatelessWidget {
   @override
@@ -13,12 +14,12 @@ class MMiningButton extends StatelessWidget {
     final dark = MHelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 13),
+      padding: const EdgeInsets.symmetric(horizontal: Msizes.md),
       child: SlideAction(
         trackBuilder: (context, state) {
           return Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(Msizes.nm),
               color: dark ? Colors.deepPurple[200] :Colors.deepPurple.withOpacity(0.31),
              
             ),

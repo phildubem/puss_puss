@@ -3,10 +3,12 @@ class MTexts {
   static const String onboard2 = 'Earn Passively';
   static const String onboard3 = 'Start Exploring';
 
-  static const String onboardSub1 = 'Get started on your journey to blockchain mining and earn with Puss Puss!';
-  static const String onboardSub2 = 'Earn passively and hassle-free mining Puss Puss daily from your comfort.';
-  static const String onboardSub3 = "The purr-fect place for your minning adventure, Let's get you started.";
-
+  static const String onboardSub1 =
+      'Get started on your journey to blockchain mining and earn with Puss Puss!';
+  static const String onboardSub2 =
+      'Earn passively and hassle-free mining Puss Puss daily from your comfort.';
+  static const String onboardSub3 =
+      "The purr-fect place for your minning adventure, Let's get you started.";
 
   static const String appName = 'Puss Puss';
   static const String hello = 'Hello';
@@ -17,10 +19,14 @@ class MTexts {
   static const String enter = 'Enter';
   static const String done = 'Done';
 
-
   static const String slide = 'Slide to Start Mining';
   static const String mining = 'Mining Now';
-  
+  static const String earning = 'Earnings Today';
+  static const String total = 'Total';
+  static const String totalBal = 'Total Balance';
+  static const String referLink = 'Share referral link';
+  static const String referMsg =
+      'Refer Puss Miner to a friend and earn exciting rewards';
 
   static const String firstName = 'First Name';
   static const String lasttName = 'Last Name';
@@ -46,17 +52,22 @@ class MTexts {
   static const String alreadyHave = 'Have an account?';
 
   static const String loginTitle = 'Welcome back,';
-  static const String loginSubTitle = 'Continue to limitless opportunities awaiting you!';
+  static const String loginSubTitle =
+      'Continue to limitless opportunities awaiting you!';
   static const String signupTitle = "Let's get started";
   static const String forgotPasswordTitle = 'Forgot Password';
-  static const String forgotPasswordSubTitle = 'Enter your email address and we would send you a password reset link.';
+  static const String forgotPasswordSubTitle =
+      'Enter your email address and we would send you a password reset link.';
   static const String changetPasswordTitle = 'Password Reset Email Sent.';
-  static const String changePasswordSubTitle = "We've sent a secured link to your email address to help you reset your password.";
+  static const String changePasswordSubTitle =
+      "We've sent a secured link to your email address to help you reset your password.";
   static const String verifyEmailTitle = 'Verify your email address';
-  static const String verifyEmailSubTitle = "You're almost there, verify your email address to continue.";
-  static const String emailNotReceivedMessage = "Didn't' get the email? Resend it or Check you junk/spam folder.";
-  static const String accountCreatedTitle = 'Your account was created successfully';
-  static const String accountCreatedSubTitle = 'Welcome to Puss Puss, get started on your journey to blockchain mining and exploration.';
-  
-
+  static const String verifyEmailSubTitle =
+      "You're almost there, verify your email address to continue.";
+  static const String emailNotReceivedMessage =
+      "Didn't' get the email? Resend it or Check you junk/spam folder.";
+  static const String accountCreatedTitle =
+      'Your account was created successfully';
+  static const String accountCreatedSubTitle =
+      'Welcome to Puss Puss, get started on your journey to blockchain mining and exploration.';
 }

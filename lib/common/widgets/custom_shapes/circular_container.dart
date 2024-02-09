@@ -4,12 +4,13 @@ import '../../../utils/constants/colors.dart';
 
 class MCircularContainer extends StatelessWidget {
   const MCircularContainer({
-    super.key, this.width = 400, this.height = 400, this.padding = 8, this.child, this.bg = MColors.light, this.radius =400,
+    super.key, this.width = 400, this.height = 400, this.padding = 8, this.child, this.bg = MColors.light, this.radius =400, this.margin,
   });
 
   final double? width;
   final double? height;
   final double padding;
+  final EdgeInsets? margin;
   final double radius;
   final Widget? child;
   final Color? bg;
@@ -19,6 +20,7 @@ class MCircularContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius),

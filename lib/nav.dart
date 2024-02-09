@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:puss_puss/features/auth/views/main_screens/home/home.dart';
+import 'package:puss_puss/features/screens/views/home/home.dart';
+import 'package:puss_puss/pages/home.dart';
+import 'package:puss_puss/pages/settings.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 
 import 'utils/helpers/helper_function.dart';
@@ -25,8 +27,8 @@ class NavBar extends StatelessWidget {
             child: NavigationBar(
               elevation: 0,
               backgroundColor: dark
-                  ? MColors.primary.withOpacity(0.9)
-                  : MColors.white.withOpacity(0.9),
+                  ? MColors.primary.withOpacity(0.97)
+                  : MColors.white.withOpacity(0.97),
               indicatorColor: dark
                   ? MColors.white.withOpacity(0.12)
                   : MColors.primary.withOpacity(0.12),
@@ -61,7 +63,7 @@ class NavController extends GetxController {
 
   final screens = [
     HomeScreen(),
-    Container(color: Colors.green),
-    Container(color: Colors.grey),
+    SettingsPage(),
+    HomePage()
   ];
 }

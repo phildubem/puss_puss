@@ -37,7 +37,7 @@ class MDeviceUtils {
   }
 
   static double getScreenWidth(BuildContext context) {
-    return MediaQuery.of(context).size.height;
+    return MediaQuery.of(context).size.width;
   }
 
   static double getPixelRatio() {

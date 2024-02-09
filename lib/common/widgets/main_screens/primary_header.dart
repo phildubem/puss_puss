@@ -20,7 +20,7 @@ class MPrimaryHeader extends StatelessWidget {
         padding: EdgeInsets.all(0),
         child: SizedBox(
           // Controls height of top curved container
-          height: MHelperFunctions.screenWidth() * 0.57,
+          height: MHelperFunctions.screenHeight() * 0.35,
           child: Stack(
             children: [
               // Background Custom Shapes (Circular Contianer)
