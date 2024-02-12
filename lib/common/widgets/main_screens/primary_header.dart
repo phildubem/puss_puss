@@ -18,25 +18,21 @@ class MPrimaryHeader extends StatelessWidget {
       child: Container(
         color: dark ? MColors.primary : Colors.deepPurple[200],
         padding: EdgeInsets.all(0),
-        child: SizedBox(
-          // Controls height of top curved container
-          height: MHelperFunctions.screenHeight() * 0.35,
-          child: Stack(
-            children: [
-              // Background Custom Shapes (Circular Contianer)
-              Positioned(
-                  top: -150,
-                  right: -180,
-                  child:
-                      MCircularContainer(bg: MColors.light.withOpacity(0.1))),
-              Positioned(
-                  top: 80,
-                  right: -280,
-                  child:
-                      MCircularContainer(bg: MColors.light.withOpacity(0.1))),
-              child,
-            ],
-          ),
+        child: Stack(
+          children: [
+            // Background Custom Shapes (Circular Contianer)
+            Positioned(
+                top: -150,
+                right: -180,
+                child:
+                    MCircularContainer(bg: MColors.light.withOpacity(0.1))),
+            Positioned(
+                top: 80,
+                right: -280,
+                child:
+                    MCircularContainer(bg: MColors.light.withOpacity(0.1))),
+            child,
+          ],
         ),
       ),
     );

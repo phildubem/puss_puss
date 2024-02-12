@@ -20,16 +20,18 @@ class MMiningButton extends StatelessWidget {
           return Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Msizes.nm),
-              color: dark ? Colors.deepPurple[200] :Colors.deepPurple.withOpacity(0.31),
-             
+              color: dark
+                  ? Colors.deepPurple[200]
+                  : Colors.deepPurple.withOpacity(0.31),
             ),
             child: Center(
               child: Text(
-                state.isPerformingAction ? '${MTexts.mining} ...' : MTexts.slide,
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .copyWith(fontSize: 20, color: dark ? MColors.primary : MColors.light),
+                state.isPerformingAction
+                    ? '${MTexts.mining} ...'
+                    : MTexts.slide,
+                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    fontSize: 20,
+                    color: dark ? MColors.primary : MColors.light),
               ),
             ),
           );
@@ -38,7 +40,7 @@ class MMiningButton extends StatelessWidget {
           return Container(
             margin: const EdgeInsets.all(7),
             decoration: BoxDecoration(
-              color: dark ? MColors.primary : Colors.deepPurpleAccent,
+              color: dark ? MColors.primary : MColors.primary.withOpacity(0.8),
               borderRadius: BorderRadius.circular(13),
             ),
             child: Center(

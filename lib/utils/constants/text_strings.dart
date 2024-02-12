@@ -11,6 +11,7 @@ class MTexts {
       "The purr-fect place for your minning adventure, Let's get you started.";
 
   static const String appName = 'Puss Puss';
+  static const String appAlt = 'Puss';
   static const String hello = 'Hello';
   static const String hi = 'Hi';
   static const String and = 'and';
@@ -22,11 +23,24 @@ class MTexts {
   static const String slide = 'Slide to Start Mining';
   static const String mining = 'Mining Now';
   static const String earning = 'Earnings Today';
+  static const String claimable = 'Claimable extra rewards await you';
+  static const String extraRewards = 'Extra Rewards';
+  static const String insights = 'Insights';
+  static const String mineRate = '1.6 P/Hr';
   static const String total = 'Total';
+  static const String claim = 'Claim';
   static const String totalBal = 'Total Balance';
+  static const String availableBal = 'Available Balance';
+  static const String witdrawalUnavailable =
+      'Puss withdrawals unavailable for now';
+  static const String withdraw = 'Withdraw';
+  static const String withdrawHistory = 'Withdrawal History';
+  static const String withdrawalMsg = 'No withdrawals made yet';
   static const String referLink = 'Share referral link';
   static const String referMsg =
-      'Refer Puss Miner to a friend and earn exciting rewards';
+      'Refer Puss Miner to a friend and earn exciting rewards.';
+  static const String adsHelp =
+      'Ads help us serve you better - Thanks for your support ❤️';
 
   static const String firstName = 'First Name';
   static const String lasttName = 'Last Name';

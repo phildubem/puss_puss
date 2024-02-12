@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 import 'package:puss_puss/utils/constants/sizes.dart';
 
+import '../../../utils/helpers/helper_function.dart';
+
 class MRoundedContainer extends StatelessWidget {
   const MRoundedContainer({
     super.key,
@@ -12,7 +14,6 @@ class MRoundedContainer extends StatelessWidget {
     this.radius = Msizes.nm,
     this.child,
     this.showBorder = false,
-    this.bg = MColors.white,
     this.borderColor = MColors.light,
   });
 
@@ -23,7 +24,6 @@ class MRoundedContainer extends StatelessWidget {
   final double radius;
   final Widget? child;
   final bool showBorder;
-  final Color bg;
   final Color borderColor;
 
   @override
@@ -35,7 +35,7 @@ class MRoundedContainer extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: bg,
+        color: MHelperFunctions.isDarkMode(context) ? MColors.primary.withOpacity(0.9) : MColors.light.withOpacity(0.7),
         border: showBorder ? Border.all(color: borderColor) : null,
       ),
       child: child,

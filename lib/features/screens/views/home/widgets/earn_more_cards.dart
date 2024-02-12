@@ -5,6 +5,7 @@ import 'package:puss_puss/common/widgets/custom_shapes/rounded_image.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 import 'package:puss_puss/utils/constants/image_strings.dart';
 import 'package:puss_puss/utils/constants/sizes.dart';
+import 'package:puss_puss/utils/constants/text_strings.dart';
 
 import '../../../../../utils/helpers/helper_function.dart';
 
@@ -15,7 +16,7 @@ class MEarnMoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MHelperFunctions.isDarkMode(context);
     return SizedBox(
-      height: MHelperFunctions.screenHeight() * 0.23,
+      height: MHelperFunctions.screenHeight() * 0.22,
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: 3,
@@ -31,15 +32,13 @@ class MEarnMoreCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(Msizes.nm),
                 color: MHelperFunctions.isDarkMode(context)
                     ? MColors.primary.withOpacity(0.4)
-                    : MColors.light,
+                    : MColors.light.withOpacity(0.5),
               ),
               child: Column(children: [
                 MRoundedContainer(
-                  height: MHelperFunctions.screenHeight() * 0.14,
                   width: MHelperFunctions.screenWidth() * 0.22,
                   padding: EdgeInsets.symmetric(
                       horizontal: Msizes.ssm, vertical: Msizes.ssm),
-                  bg: dark ? MColors.primary.withOpacity(0.9) : MColors.light,
                   child: Stack(children: [
                     MRoundedImage(
                         imageUrl: MImages.gift,
@@ -54,37 +53,36 @@ class MEarnMoreCard extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: dark
                                 ? MColors.white.withOpacity(0.3)
-                                : Colors.deepPurple.withOpacity(0.3),
+                                : MColors.primary.withOpacity(0.4),
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(Msizes.ssm),
                                 topRight: Radius.circular(Msizes.ssm))),
                         child: Text(
                           '${index + 1}',
-                          style: Theme.of(context).textTheme.labelSmall!,
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelSmall!
+                              .copyWith(color: MColors.light),
                           textAlign: TextAlign.center,
                         ),
                       ),
                     ),
                   ]),
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Padding(
-                    padding: EdgeInsets.only(top: Msizes.xs, bottom: Msizes.sxxs),
-                    child: MRoundedContainer(
-                      width: MHelperFunctions.screenWidth() * 0.19,
-                      radius: Msizes.xs,
-                      bg: dark
-                          ? Colors.deepPurple.withOpacity(0.6)
-                          : Colors.deepPurple.withOpacity(0.3),
-                      padding: EdgeInsets.symmetric(vertical: Msizes.xxs),
-                      child: Text('Claim',
-                          style: Theme.of(context).textTheme.labelLarge,
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 2,
-                          textAlign: TextAlign.center),
-                    ),
-                  ),
+                Padding(
+                  padding: const EdgeInsets.only(top: Msizes.xs),
+                  child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: dark
+                              ? Colors.deepPurple.withOpacity(0.6)
+                              : MColors.primary.withOpacity(0.8),
+                          padding: EdgeInsets.symmetric(horizontal: Msizes.md),
+                          side: BorderSide.none),
+                      child: Text(
+                        MTexts.claim,
+                        style: TextStyle(color: Colors.white),
+                      )),
                 ),
               ]),
             ),

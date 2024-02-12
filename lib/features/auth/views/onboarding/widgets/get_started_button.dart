@@ -13,7 +13,7 @@ class GetStartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        bottom: MDeviceUtils.getBottomNavigationBarHeight() + 10,
+        bottom: MDeviceUtils.getBottomNavigationBarHeight() + 20,
         right: Msizes.xl,
         child: ElevatedButton(
           onPressed: () => OnBoardingController.instance.nextPage(),

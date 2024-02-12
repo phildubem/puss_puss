@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:puss_puss/features/screens/views/home/home.dart';
-import 'package:puss_puss/pages/home.dart';
-import 'package:puss_puss/pages/settings.dart';
+import 'package:puss_puss/features/screens/views/settings/settings.dart';
+import 'package:puss_puss/features/screens/views/wallet/wallet.dart';
 import 'package:puss_puss/utils/constants/colors.dart';
 
 import 'utils/helpers/helper_function.dart';
@@ -26,6 +26,7 @@ class NavBar extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(20)),
             child: NavigationBar(
               elevation: 0,
+              //indicatorShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
               backgroundColor: dark
                   ? MColors.primary.withOpacity(0.97)
                   : MColors.white.withOpacity(0.97),
@@ -63,7 +64,7 @@ class NavController extends GetxController {
 
   final screens = [
     HomeScreen(),
-    SettingsPage(),
-    HomePage()
+    WalletScreen(),
+    SettingsScreen()
   ];
 }

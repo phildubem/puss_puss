@@ -10,10 +10,10 @@ class MOutlinedButtonTheme {
       elevation: 0,
       foregroundColor: MColors.primary,
       side: BorderSide(color: MColors.primary),
-      padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
       textStyle: TextStyle(
           fontSize: 16, color: MColors.primary, fontWeight: FontWeight.normal),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     ),
   );
 
@@ -22,10 +22,10 @@ class MOutlinedButtonTheme {
       elevation: 0,
       foregroundColor: MColors.white,
       side: BorderSide(color: MColors.primary),
-      padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
       textStyle: TextStyle(
           fontSize: 16, color: MColors.white, fontWeight: FontWeight.normal),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     ),
   );
 }

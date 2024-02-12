@@ -24,7 +24,7 @@ class MNotificationsScrollBar extends StatelessWidget {
       padding: EdgeInsets.all(Msizes.xxs),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: MColors.grey.withOpacity(0.5))),
+          border: Border.all(color: MColors.light.withOpacity(0.5))),
       child: GestureDetector(
         onTap: () {},
         child: CarouselSlider.builder(

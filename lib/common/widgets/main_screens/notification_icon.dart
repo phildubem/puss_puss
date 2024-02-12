@@ -17,7 +17,7 @@ class MNotificationIcon extends StatelessWidget {
       children: [
         IconButton(onPressed: onPressed, icon: Icon(Iconsax.notification)),
         Positioned(
-          right: 6,
+          right: 7,
           top: 6,
           child: Container(
             width: 15,
@@ -35,7 +35,7 @@ class MNotificationIcon extends StatelessWidget {
                     color: dark
                         ? MColors.primary.withOpacity(0.9)
                         : MColors.light.withOpacity(0.9),
-                    fontSizeFactor: 0.8,
+                    fontSizeFactor: 0.7,
                   ),
             ),
           ),
