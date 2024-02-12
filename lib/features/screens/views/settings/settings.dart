@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/about_us.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/faq.dart';
 import 'package:puss_puss/features/screens/views/settings/widgets/head_section.dart';
@@ -70,30 +71,40 @@ class SettingsScreen extends StatelessWidget {
                     title: 'Website',
                     isTrailing: false,
                     trailing: Icon(Iconsax.export_3, size: 17),
+                    onTap: () =>
+                        launchUrl(Uri.parse('https://pusspusscoin.com')),
                   ),
                   MSettingsTiles(
                     icon: FontAwesomeIcons.xTwitter,
                     title: 'Twitter',
                     isTrailing: false,
                     trailing: Icon(Iconsax.export_3, size: 17),
+                    onTap: () =>
+                        launchUrl(Uri.parse('https://x.com/pusspusscoin?s=21')),
                   ),
                   MSettingsTiles(
                     icon: FontAwesomeIcons.telegram,
                     title: 'Telegram',
                     isTrailing: false,
                     trailing: Icon(Iconsax.export_3, size: 17),
+                    onTap: () =>
+                        launchUrl(Uri.parse('https://t.me/pusspusscoin')),
                   ),
                   MSettingsTiles(
                     icon: Iconsax.instagram,
                     title: 'Instagram',
                     isTrailing: false,
                     trailing: Icon(Iconsax.export_3, size: 17),
+                    onTap: () => launchUrl(Uri.parse(
+                        'https://instagram.com/pusspusscoin?utm_source=qr')),
                   ),
                   MSettingsTiles(
                     icon: FontAwesomeIcons.facebookF,
                     title: 'Facebook',
                     isTrailing: false,
                     trailing: Icon(Iconsax.export_3, size: 17),
+                    onTap: () => launchUrl(Uri.parse(
+                        'https://www.facebook.com/profile.php?id=61551625786711&mibextid=LQQJ4d')),
                   ),
                   SizedBox(height: Msizes.nm),
                   Divider(
