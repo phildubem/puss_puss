@@ -16,7 +16,7 @@ class MEarnMoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MHelperFunctions.isDarkMode(context);
     return SizedBox(
-      height: MHelperFunctions.screenHeight() * 0.22,
+      height: MHelperFunctions.screenHeight() * 0.23,
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: 3,
@@ -26,7 +26,7 @@ class MEarnMoreCard extends StatelessWidget {
             padding: const EdgeInsets.only(right: Msizes.sm),
             child: Container(
               width: MHelperFunctions.screenWidth() * 0.27,
-              padding: EdgeInsets.symmetric(vertical: 8),
+              padding: EdgeInsets.symmetric(vertical: 7),
               decoration: BoxDecoration(
                 boxShadow: [MShadowStyle.verticalShadow],
                 borderRadius: BorderRadius.circular(Msizes.nm),
@@ -70,14 +70,14 @@ class MEarnMoreCard extends StatelessWidget {
                   ]),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: Msizes.xs),
+                  padding: const EdgeInsets.only(top: Msizes.xxs),
                   child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                           backgroundColor: dark
                               ? Colors.deepPurple.withOpacity(0.6)
                               : MColors.primary.withOpacity(0.8),
-                          padding: EdgeInsets.symmetric(horizontal: Msizes.md),
+                          padding: EdgeInsets.symmetric(horizontal: Msizes.nm),
                           side: BorderSide.none),
                       child: Text(
                         MTexts.claim,

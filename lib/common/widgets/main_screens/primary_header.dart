@@ -24,13 +24,11 @@ class MPrimaryHeader extends StatelessWidget {
             Positioned(
                 top: -150,
                 right: -180,
-                child:
-                    MCircularContainer(bg: MColors.light.withOpacity(0.1))),
+                child: MCircularContainer(bg: MColors.light.withOpacity(0.1))),
             Positioned(
                 top: 80,
                 right: -280,
-                child:
-                    MCircularContainer(bg: MColors.light.withOpacity(0.1))),
+                child: MCircularContainer(bg: MColors.light.withOpacity(0.1))),
             child,
           ],
         ),

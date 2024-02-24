@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:puss_puss/features/screens/views/settings/inner_pages/leaderboard.dart';
+import 'package:puss_puss/features/screens/views/settings/inner_pages/terms.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/about_us.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/faq.dart';
@@ -44,7 +46,10 @@ class SettingsScreen extends StatelessWidget {
                   MSettingsTiles(
                       icon: Iconsax.volume_high, title: 'Announcement'),
                   MSettingsTiles(
-                      icon: Iconsax.ranking_1, title: 'Leadership Board'),
+                    icon: Iconsax.ranking_1,
+                    title: 'Leaderboard',
+                    onTap: () => Get.to(() => LeaderboardScreen()),
+                  ),
                   SizedBox(height: Msizes.nm),
                   Divider(
                       color: dark ? MColors.grey : MColors.primary,
@@ -59,7 +64,10 @@ class SettingsScreen extends StatelessWidget {
                   MSettingsTiles(
                       icon: Iconsax.document_text, title: 'Privacy Policy'),
                   MSettingsTiles(
-                      icon: Iconsax.document, title: 'Terms of Service'),
+                    icon: Iconsax.document,
+                    title: 'Terms of Service',
+                    onTap: () => Get.to(() => TermsScreen()),
+                  ),
                   SizedBox(height: Msizes.nm),
                   Divider(
                       color: dark ? MColors.grey : MColors.primary,

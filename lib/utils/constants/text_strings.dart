@@ -26,7 +26,7 @@ class MTexts {
   static const String claimable = 'Claimable extra rewards await you';
   static const String extraRewards = 'Extra Rewards';
   static const String insights = 'Insights';
-  static const String mineRate = '1.6 P/Hr';
+  static const String mineRate = 'Rate: 1.6 P/Hr';
   static const String total = 'Total';
   static const String claim = 'Claim';
   static const String totalBal = 'Total Balance';

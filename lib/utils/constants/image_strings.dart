@@ -7,6 +7,7 @@ class MImages {
   static const String splash = 'assets/images/splash.png';
 
   static const String gift = 'assets/images/gift.png';
+  static const String avi = 'assets/images/avi.png';
 
   static const String facebook = 'assets/images/facebook.png';
   static const String apple = 'assets/images/apple.png';

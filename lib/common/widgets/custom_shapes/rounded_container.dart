@@ -15,6 +15,7 @@ class MRoundedContainer extends StatelessWidget {
     this.child,
     this.showBorder = false,
     this.borderColor = MColors.light,
+    this.showBg = true,
   });
 
   final double? width;
@@ -24,6 +25,7 @@ class MRoundedContainer extends StatelessWidget {
   final double radius;
   final Widget? child;
   final bool showBorder;
+  final bool showBg;
   final Color borderColor;
 
   @override
@@ -35,7 +37,11 @@ class MRoundedContainer extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: MHelperFunctions.isDarkMode(context) ? MColors.primary.withOpacity(0.9) : MColors.light.withOpacity(0.7),
+        color: showBg
+            ? MHelperFunctions.isDarkMode(context)
+                ? MColors.primary.withOpacity(0.9)
+                : MColors.light.withOpacity(0.7)
+            : Colors.transparent,
         border: showBorder ? Border.all(color: borderColor) : null,
       ),
       child: child,

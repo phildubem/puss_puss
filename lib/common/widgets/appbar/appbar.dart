@@ -14,10 +14,12 @@ class MAppBar extends StatelessWidget implements PreferredSizeWidget {
       this.showBackArrow = false,
       this.leadingIcon,
       this.actions,
-      this.leadingOnPressed});
+      this.leadingOnPressed,
+      this.showCenterTile = true});
 
   final Widget? title;
   final bool showBackArrow;
+  final bool? showCenterTile;
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
@@ -30,6 +32,7 @@ class MAppBar extends StatelessWidget implements PreferredSizeWidget {
       padding:
           EdgeInsets.fromLTRB(Msizes.xxs, Msizes.xxs, Msizes.xxs, Msizes.xxs),
       child: AppBar(
+        centerTitle: showCenterTile,
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(

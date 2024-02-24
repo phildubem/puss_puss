@@ -6,9 +6,7 @@ import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_function.dart';
 
 class MSettingsHeader extends StatelessWidget {
-  const MSettingsHeader({
-    super.key
-  });
+  const MSettingsHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +16,8 @@ class MSettingsHeader extends StatelessWidget {
       decoration: BoxDecoration(
           color: dark
               ? MColors.light.withOpacity(0.8)
-              : MColors.primary.withOpacity(0.4),
-          borderRadius:
-              BorderRadius.all(Radius.circular(Msizes.smd))),
+              : MColors.light.withOpacity(0.5),
+          borderRadius: BorderRadius.all(Radius.circular(Msizes.smd))),
       child: Image(
         width: Msizes.sxxxl,
         height: Msizes.sxxxl,

@@ -21,6 +21,7 @@ class WalletScreen extends StatelessWidget {
             child: Column(
               children: [
                 MAppBar(
+                  showCenterTile: false,
                   title: Text('Wallet'),
                 ),
                 Padding(
