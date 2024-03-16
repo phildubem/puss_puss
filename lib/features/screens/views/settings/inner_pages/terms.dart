@@ -103,7 +103,7 @@ class TermsScreen extends StatelessWidget {
                           'member must have a registered account registered in the Pussspuss app. '
                           'Product information, pricing and availability of products listed in the'
                           'Pussspuss app are subject to change at all times.'
-                          '\n- Detailed Guide Terms by Services'
+                          '\n\n● Detailed Guide Terms by Services'
                           '\nPrior to using the Pussspuss Service, please read carefully the Detailed '
                           'Guide Terms by Services. Proper use and precaution will be provided when a '
                           'user or member uses the Pussspuss Service. Digital assets may be required '
@@ -113,7 +113,7 @@ class TermsScreen extends StatelessWidget {
                           'the precautions, detailed guide terms etc. that the Service provides. Due to '
                           'the characteristics of the blockchain technology, used digital assets etc. such '
                           'as transactions occurred with purchase etc., cannot be returned.'
-                          '\n- Pussspuss'
+                          '\n\n● Pussspuss'
                           '\nThe company offers online services for mobile apps, games and social content'
                           'through web or applications based on the blockchain mainnet. to use '
                           'Pussspuss service, information such as google or apple account information,'
@@ -163,7 +163,7 @@ class TermsScreen extends StatelessWidget {
                           'member may terminate the Service Agreement through discontinuation of use '
                           'of Service or withdraw membership at any time. The date of the most recent '
                           'modifications will be indicated at the top of these Terms of Service.'
-                          '● Registration'
+                          '\n\n● Registration\n'
                           'Those who wish to be a Member must complete registration according to the '
                           'Pussspuss Service registration procedure as below to use the service. All '
                           'responsibilities are bound to the User for registering with wrong ID, password '
@@ -332,52 +332,186 @@ class TermsScreen extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodySmall),
                 ]),
               ),
-              DataTable(columns: [
-                DataColumn(
-                  label: Text('Activity'),
-                ),
-                DataColumn(
-                  label: Text('Description'),
-                ),
-                DataColumn(
-                  label: Text('Penalty'),
-                ),
-              ], rows: [
-                DataRow(cells: [
-                  DataCell(Text('Contents Abuse / Use of Bug')),
-                  DataCell(Text(
-                      'The act of seriously impacting the system and Pussspuss Service operation through abusing abnormal contents and bugs in Pussspuss Service')),
-                  DataCell(Padding(
-                    padding: EdgeInsets.all(5),
-                    child: Text('Contents Abuse / Use of Bug'),
-                  )),
-                ]),
-                DataRow(cells: [
-                  DataCell(Text('Activity')),
-                  DataCell(Text('Description')),
-                  DataCell(Text('Penalty')),
-                ])
-              ]),
-              Table(children: [
-                TableRow(children: [
-                  Text('Activity'),
-                  Text('Description'),
-                  Text('Penalty'),
-                ]),
-                TableRow(children: [
-                  Text(
-                    'Contents Abuse / Use of Bug',
+              DataTable(
+                showCheckboxColumn: false,
+                columnSpacing: 13,
+                horizontalMargin: 1,
+                dataRowMinHeight: 45,
+                dataRowMaxHeight: 130,
+                dataTextStyle: Theme.of(context)
+                    .textTheme
+                    .bodySmall!
+                    .copyWith(fontSize: 13.5),
+                columns: const <DataColumn>[
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Activity ',
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ),
                   ),
-                  Text(
-                      'The act of seriously impacting the system and Pussspuss Service operation through abusing abnormal contents and bugs in Pussspuss Service'),
-                  Text('Lars Bak'),
-                ]),
-                TableRow(children: [
-                  Text('1996'),
-                  Text('Java'),
-                  Text('James Gosling'),
-                ]),
-              ]),
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Description',
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ),
+                  ),
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Penalty',
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ),
+                  ),
+                ],
+                rows: <DataRow>[
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Contents Abuse / Use of Bug')),
+                      DataCell(Text(
+                          'Impacting the system / operations through abusive contents and use of bugs in Pussspuss Service')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Impersonating a member of the Company')),
+                      DataCell(Text(
+                          'The act of confusing other users or any such attempt through impersonation')),
+                      DataCell(Text('Permanent Account Suspension')),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Fraudulent Activity')),
+                      DataCell(Text(
+                          'Any clearly identified attempt to deceive other users to gain improper advantage')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Account Theft')),
+                      DataCell(Text(
+                          'Accounts that have traded or hold assets reported for account theft')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Multi-account Usage')),
+                      DataCell(Text(
+                          'Running multiple accounts, disrupting the functioning and operation of the system')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('False Report')),
+                      DataCell(Text(
+                          'Falsely reporting account theft and fraudulent activity/ defective users with false information')),
+                      DataCell(Text(
+                        '1st: 10 - 30 days Suspension \n2nd: Permanent Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('ID Abuse')),
+                      DataCell(Text(
+                          'Creating ID that is contrary to the applicable laws and social order, abusive language and obscenity')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(
+                          Text('Use and Dissemination of Illegal Programs')),
+                      DataCell(Text(
+                          'Impacting Pusspuss service via the use of illegal software/hardware not provided by Pussspuss')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text('Abnormal Service Access')),
+                      DataCell(Text(
+                          'Abnormal access confirmed by monitoring and system')),
+                      DataCell(Text(
+                        'Permanent Account Suspension',
+                      )),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text(
+                          'Interfering with Operation and Use of Service')),
+                      DataCell(Text(
+                          'Disregarding warnings or interferance and any act that deliberately interfers with service use of other users')),
+                      DataCell(Text(
+                        '1st: 10 - 30 days Suspension \n2nd: Permanent Suspension',
+                      )),
+                    ],
+                  ),
+                ],
+              ),
+              Divider(),
+              RichText(
+                  text: TextSpan(children: [
+                TextSpan(
+                    text:
+                        "- The application of the above suspension may be adjusted at the discretion of the Company depending on the nature of each case."
+                        '\n- In the case of violations of multiple policies, the highest penalty of the violations, or the aggravation of penalties can be applied.'
+                        '\n- Second or higher levels of penalty may be applied to users who are conducting uncivil behaviours in Pussspuss Service or interfering with the order of the Service.'
+                        "\n- In cases that are not specifically stated in the above suspension, if an act is determined to cause/possibly cause serious issues in/outside of pussspuss service, the use of the service may be restricted in accordance with the company’s terms of service.",
+                    style: Theme.of(context).textTheme.bodySmall),
+                //change
+                TextSpan(
+                    text: "\n\n● User Responsibility"
+                        "\nThrough use of the Service, user and member are deemed to have fully agreed that they are solely responsible for the use of login and password of their account, protection of any registration data provided for account creation, and for any actions conducted during account usage. A User and member shall not share generated information such as account related to the Service, password, recovery phrase, mnemonic key, and private key to anyone and shall manage and protect it by him/her self. A user and member hereby agree with the following conditions related to the in-game item and digital asset."
+                        "\n -	The Service provided by the Company refers to the inclusive entirety of the Company provided website, wallet and such, which is accessible through PC, tablet, mobile or any electronic device. The Company is not responsible for any in-game and/or digital assets related."
+                        "\n - The responsibility of the Company is only with the service operation and management and it does not act as an intermediary of seller or buyer of in-game item and/or digital asset. The user and the member are fully and directly responsible for trade between parties and shared information."
+                        "\n -	The Pussspuss WALLET password, mnemonic key, and private key are not saved anywhere and those are information that Member must manage. All transactions are processed by signature by the Member. Thus, mnemonic key, and private key required for transaction signature must be managed by the Member and strengthen its security. Member is responsible for the entire management."
+                        "\n\n● Use Restrictions in High-Risk regions"
+                        "\n - To prevent illegal activities, including money laundering, while using Pussspuss Services, the Company reserves the right to designate high-risk regions in accordance with international guidelines such as OFAC Sanctioned Countries, and restrict access to Pussspuss Services in those regions. The following regions have been designated as high-risk regions and access to Pussspuss Services is restricted in those regions. This list may be subject to change to comply with international guidelines or regulations."
+                        "\n - Cuba, Iran, North Korea, Russia, Syria, regions of Ukraine (Crimea, Donetsk, Luhansk), The Balkans, Belarus, Burma(Myanmar), Central African Republic, Congo, Ethiopia, Iraq, Lebanon, Libya, Sudan, Venezuela, Yemen, Zimbabwe"
+                        '\n- Other Illegal acts or any act that impedes operation of the Service.'
+                        '\n- The management and responsibility of protection of the private key,'
+                        '  log in account, log in password, private key password, mnemonic key, and,'
+                        ' recovery phrase (collectively “generated information”) related to the Service'
+                        ' of Pussspuss, such as digital asset transfer, swap etc. is with the user and'
+                        " the member. It should not be used by a third party."
+                        "\n- If the user or the member’s generated information has been stolen,"
+                        " exposed, lost, or damaged, the Company can’t provide any help as per"
+                        ' characteristics of decentralised service.'
+                        '\n- If the user or the member has lost an access to their Pussscoin or'
+                        ' generated information and did not separately save it in the backup and lost'
+                        'access to all previously accessed digital asset, the responsibility of such'
+                        'result is solely with the user and the member and acknowledge and agree '
+                        'that the Company is not responsible for it.'
+                        '\n- The lost digital asset can’t be returned.'
+                        '\n- Unless a user or member abides by the relevant laws and'
+                        ' regulations, these Terms of Service and all policies of the Company, his/her'
+                        ' use of the Service and online activities may be investigated; his/her use of the'
+                        ' Service may be temporarily or continuously suspended',
+                    style: Theme.of(context).textTheme.bodySmall),
+              ]))
             ],
           ),
         ),

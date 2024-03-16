@@ -16,7 +16,7 @@ class MEarnMoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MHelperFunctions.isDarkMode(context);
     return SizedBox(
-      height: MHelperFunctions.screenHeight() * 0.23,
+      height: MHelperFunctions.screenHeight() * 0.243,
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: 3,

@@ -28,7 +28,9 @@ class MColoredAppBar extends StatelessWidget implements PreferredSizeWidget {
     final dark = MHelperFunctions.isDarkMode(context);
 
     return AppBar(
-      backgroundColor: MColors.primary,
+      backgroundColor: MHelperFunctions.isDarkMode(context)
+          ? MColors.primary.withOpacity(0.3)
+          : MColors.light,
       centerTitle: showCenterTile,
       automaticallyImplyLeading: false,
       leading: showBackArrow
