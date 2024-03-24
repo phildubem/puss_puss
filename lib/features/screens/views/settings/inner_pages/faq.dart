@@ -19,13 +19,15 @@ class FaqScreen extends StatelessWidget {
           child: Column(
             children: [
               ExpansionTile(
-                title: Text('1. What is Puss Puss?'),
+                title: Text(
+                  '1. What is Puss Puss?',
+                ),
                 children: [
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "Puss Puss is a cryptocurrency created to celebrate the playful rivalry between cats and dogs. It provides a fun and community-driven space for cryptocurrency enthusiasts and animal lovers. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   )
                 ],
@@ -37,7 +39,7 @@ class FaqScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "You can acquire Puss Puss by mining on your mobile device for free. Disclaimer - Puss Puss is not free money and this is only at the early stage, of which 20% of total supply would be distributed to early users. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   )
                 ],
@@ -50,7 +52,7 @@ class FaqScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "Absolutely! Puss Puss is designed for everyday use with fast transaction times and low fees, making it suitable for micro-transactions and daily spending. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   )
                 ],
@@ -63,7 +65,7 @@ class FaqScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "A portion of transaction fees goes directly to our charity fund, which supports animal welfare organizations. By using Puss Puss, you're making a positive impact on the lives of cats and dogs. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   )
                 ],
@@ -74,9 +76,8 @@ class FaqScreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
-                      "Our long term vision is to continue fostering a lively and competitive community while expanding the real-world applications of Puss Puss. We're exploring the development of a payment platform for businesses and other exciting use cases. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
-                    ),
+                        "Our long term vision is to continue fostering a lively and competitive community while expanding the real-world applications of Puss Puss. We're exploring the development of a payment platform for businesses and other exciting use cases. \n",
+                        style: Theme.of(context).textTheme.bodySmall),
                   )
                 ],
               ),
@@ -87,7 +88,7 @@ class FaqScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "Puss Puss takes security seriously. We've implemented robust security measures to protect both our network and our users, ensuring a safe and enjoyable experience. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   )
                 ],
@@ -100,7 +101,7 @@ class FaqScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: Msizes.sm),
                     child: Text(
                       "Puss Puss embraces a playful and meme-inspired theme, but it's also a serious cryptocurrency with real-world utility. We're dedicated to providing a cryptocurrency that's both fun and functional. \n",
-                      style: Theme.of(context).textTheme.labelMedium,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
                 ],

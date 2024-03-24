@@ -20,7 +20,6 @@ class TermsScreen extends StatelessWidget {
           child: Column(
             children: [
               RichText(
-                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text:
@@ -148,7 +147,7 @@ class TermsScreen extends StatelessWidget {
                       text: '4. Use of Services \n',
                       style: Theme.of(context).textTheme.headlineSmall),
                   TextSpan(
-                      text: '● Effect and modification of Terms of Service'
+                      text: '● Effect and modification of Terms of Service\n'
                           'The Company, if deemed necessary, can modify these Terms of Service to'
                           'the extent that it does not violate the relevant laws and regulations. Any'
                           'modified contents shall be announced or notified by Company via electronic '
@@ -473,45 +472,94 @@ class TermsScreen extends StatelessWidget {
               ),
               Divider(),
               RichText(
-                  text: TextSpan(children: [
-                TextSpan(
-                    text:
-                        "- The application of the above suspension may be adjusted at the discretion of the Company depending on the nature of each case."
-                        '\n- In the case of violations of multiple policies, the highest penalty of the violations, or the aggravation of penalties can be applied.'
-                        '\n- Second or higher levels of penalty may be applied to users who are conducting uncivil behaviours in Pussspuss Service or interfering with the order of the Service.'
-                        "\n- In cases that are not specifically stated in the above suspension, if an act is determined to cause/possibly cause serious issues in/outside of pussspuss service, the use of the service may be restricted in accordance with the company’s terms of service.",
-                    style: Theme.of(context).textTheme.bodySmall),
-                //change
-                TextSpan(
-                    text: "\n\n● User Responsibility"
-                        "\nThrough use of the Service, user and member are deemed to have fully agreed that they are solely responsible for the use of login and password of their account, protection of any registration data provided for account creation, and for any actions conducted during account usage. A User and member shall not share generated information such as account related to the Service, password, recovery phrase, mnemonic key, and private key to anyone and shall manage and protect it by him/her self. A user and member hereby agree with the following conditions related to the in-game item and digital asset."
-                        "\n -	The Service provided by the Company refers to the inclusive entirety of the Company provided website, wallet and such, which is accessible through PC, tablet, mobile or any electronic device. The Company is not responsible for any in-game and/or digital assets related."
-                        "\n - The responsibility of the Company is only with the service operation and management and it does not act as an intermediary of seller or buyer of in-game item and/or digital asset. The user and the member are fully and directly responsible for trade between parties and shared information."
-                        "\n -	The Pussspuss WALLET password, mnemonic key, and private key are not saved anywhere and those are information that Member must manage. All transactions are processed by signature by the Member. Thus, mnemonic key, and private key required for transaction signature must be managed by the Member and strengthen its security. Member is responsible for the entire management."
-                        "\n\n● Use Restrictions in High-Risk regions"
-                        "\n - To prevent illegal activities, including money laundering, while using Pussspuss Services, the Company reserves the right to designate high-risk regions in accordance with international guidelines such as OFAC Sanctioned Countries, and restrict access to Pussspuss Services in those regions. The following regions have been designated as high-risk regions and access to Pussspuss Services is restricted in those regions. This list may be subject to change to comply with international guidelines or regulations."
-                        "\n - Cuba, Iran, North Korea, Russia, Syria, regions of Ukraine (Crimea, Donetsk, Luhansk), The Balkans, Belarus, Burma(Myanmar), Central African Republic, Congo, Ethiopia, Iraq, Lebanon, Libya, Sudan, Venezuela, Yemen, Zimbabwe"
-                        '\n- Other Illegal acts or any act that impedes operation of the Service.'
-                        '\n- The management and responsibility of protection of the private key,'
-                        '  log in account, log in password, private key password, mnemonic key, and,'
-                        ' recovery phrase (collectively “generated information”) related to the Service'
-                        ' of Pussspuss, such as digital asset transfer, swap etc. is with the user and'
-                        " the member. It should not be used by a third party."
-                        "\n- If the user or the member’s generated information has been stolen,"
-                        " exposed, lost, or damaged, the Company can’t provide any help as per"
-                        ' characteristics of decentralised service.'
-                        '\n- If the user or the member has lost an access to their Pussscoin or'
-                        ' generated information and did not separately save it in the backup and lost'
-                        'access to all previously accessed digital asset, the responsibility of such'
-                        'result is solely with the user and the member and acknowledge and agree '
-                        'that the Company is not responsible for it.'
-                        '\n- The lost digital asset can’t be returned.'
-                        '\n- Unless a user or member abides by the relevant laws and'
-                        ' regulations, these Terms of Service and all policies of the Company, his/her'
-                        ' use of the Service and online activities may be investigated; his/her use of the'
-                        ' Service may be temporarily or continuously suspended',
-                    style: Theme.of(context).textTheme.bodySmall),
-              ]))
+                text: TextSpan(children: [
+                  TextSpan(
+                      text:
+                          "- The application of the above suspension may be adjusted at the discretion of the Company depending on the nature of each case."
+                          '\n- In the case of violations of multiple policies, the highest penalty of the violations, or the aggravation of penalties can be applied.'
+                          '\n- Second or higher levels of penalty may be applied to users who are conducting uncivil behaviours in Pussspuss Service or interfering with the order of the Service.'
+                          "\n- In cases that are not specifically stated in the above suspension, if an act is determined to cause/possibly cause serious issues in/outside of pussspuss service, the use of the service may be restricted in accordance with the company’s terms of service.",
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: "\n\n● User Responsibility"
+                          "\nThrough use of the Service, user and member are deemed to have fully agreed that they are solely responsible for the use of login and password of their account, protection of any registration data provided for account creation, and for any actions conducted during account usage. A User and member shall not share generated information such as account related to the Service, password, recovery phrase, mnemonic key, and private key to anyone and shall manage and protect it by him/her self. A user and member hereby agree with the following conditions related to the in-game item and digital asset."
+                          "\n-	The Service provided by the Company refers to the inclusive entirety of the Company provided website, wallet and such, which is accessible through PC, tablet, mobile or any electronic device. The Company is not responsible for any in-game and/or digital assets related."
+                          "\n- The responsibility of the Company is only with the service operation and management and it does not act as an intermediary of seller or buyer of in-game item and/or digital asset. The user and the member are fully and directly responsible for trade between parties and shared information."
+                          "\n-	The Pussspuss WALLET password, mnemonic key, and private key are not saved anywhere and those are information that Member must manage. All transactions are processed by signature by the Member. Thus, mnemonic key, and private key required for transaction signature must be managed by the Member and strengthen its security. Member is responsible for the entire management."
+                          "\n\n● Use Restrictions in High-Risk regions"
+                          "\n- To prevent illegal activities, including money laundering, while using Pussspuss Services, the Company reserves the right to designate high-risk regions in accordance with international guidelines such as OFAC Sanctioned Countries, and restrict access to Pussspuss Services in those regions. The following regions have been designated as high-risk regions and access to Pussspuss Services is restricted in those regions. This list may be subject to change to comply with international guidelines or regulations."
+                          "\n- Cuba, Iran, North Korea, Russia, Syria, regions of Ukraine (Crimea, Donetsk, Luhansk), The Balkans, Belarus, Burma(Myanmar), Central African Republic, Congo, Ethiopia, Iraq, Lebanon, Libya, Sudan, Venezuela, Yemen, Zimbabwe",
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: '\n\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '6. Service Termination \n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text:
+                          "If a member wishes to terminate the Service, the member may withdraw membership in accordance with procedures set by the Company through membership withdrawal function."
+                          '\n- Upon withdrawal, a member cannot sign-in to Pussspuss Service and use of the Service is restricted.'
+                          '\n- Upon withdrawal, all information related to Pussspuss Service is deleted and cannot be recovered.'
+                          "\n- All Pusspuss coins held by the user will be permanently deleted (burned) upon withdrawal before the on-chain wallet feature is activated."
+                          '\n- After the on-chain wallet feature is activated, member will receive Pusspuss coin before withdrawing.'
+                          '\n- If there are any pending transactions or activities within Pussspuss, the withdrawal request will not be possible. Please complete all pending transactions before proceeding with the withdrawal.'
+                          '\n- Upon withdrawal, you cannot re-register with the same email address.'
+                          '\n- Upon completion of termination, a member’s information will be removed from the Service. However, due to technological characteristics of Blockchain, data related to Blockchain cannot be deleted.'
+                          '\n- For Pusspuss WALLET that directly manages the mnemonic key and private key, all authorities such as member registration, termination, signature are with the member and a member can terminate the Service by deleting Pusspuss WALLET and mnemonic key and private key without separate termination process.',
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: '\n\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '7. Copyright\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '● Property of Copyright'
+                          "\nThe copyright and the other intellectual property of the entire Pussspuss"
+                          "Service and contents in the Service made by the Company belongs to the Company. The user and the member must not use information belonging as an intellectual property of the Company or a provider acquired during service use provided the Company by replicating⋅transmitting etc. (includes editing, publishing, performing, distributing, broadcasting, writing derivative content etc.) for profit or make other use it without prior consent by the Company or the provider. The Company, with the below methods and conditions, permits the user and the member to use communication, image, sound, and all materials and information (the “User Contents”) including chat texts related to the Service or displayed in the Service uploaded or sent by the member or other user through the Service."
+                          '\n- Using, changing in form of editing and modifying such User Contents (can be used in any kind of form such as publication, replicating, performing, transmitting, distributing, broadcasting, writing derivative content etc. and has no restriction of use period or location).'
+                          "\n- Shall not do acts such as selling, renting, and transferring User Contents for the purpose of trading without prior consent of the user who created the User Content."
+                          "\n- The Company does not use member’s User Contents which are not displayed within the Service or integrated with the Service (e.g. posts uploaded in users’ bulletin) and the User or the member can delete such User Contents anytime."
+                          "\n- The Company, with its discretion, can delete or transfer posts uploaded or submitted in the Service by the user or the member without prior notice if it is confirmed as a violation of Article 5 Obligations of Contracting Parties and may reject its application."
+                          "\n- The user or the member whose profit has been invaded legally due to posted information in community, bulletin operated by the Company can submit a deletion of such information or refutation to the Company. The Company shall promptly act with necessary action and notify the applicant."
+                          '\n\n● Obligation of the User and the Member'
+                          "\nThe user and the member cannot replicate, transmit, distribute, use the Service or all materials included without written prior consent of the Company and cannot use the Service or all materials included for the commercial purpose of an individual. Thus, the user and the member cannot lease, sell below license, transfer the Service or inclusive materials. The user and the member is prohibited from deleting, hiding, or editing content, property, intellectual property or any or all rights related to the Service. During use of the service, the user and the member must not display the third party’s product or the Service such as the Company or third service provider’s name, brand, etc. or have the same display with the third party’s business or generate or use similar display."
+                          "This article remains in effect during the service operation of the Company and applies constantly after end of service use or termination of the membership.",
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: '\n\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '8. Indemnification and Immunity\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '● Indemnification for Damage'
+                          "\nThe Company or user and the member have a responsibility to indemnify the damage if one violates the terms and does damages to the other party unless it was intentional or negligence. If the Company signed a partnership with a separate service provider and provides the separate service to the member and the user or the member agrees with the terms and conditions of this separate service and if the separate service provider does damage to the individual with intention or by negligence, the separate service provider has responsibility for the damage occurred."
+                          "\n\n● Company’s Immunity"
+                          "\nThe Company is not responsible for not being able to provide service due to natural disaster or force majeure of such level. The Company is not responsible for damages caused by other reasons such as remuneration, replacement, regular inspection, and construction of service facilities unless it was the company's intentional or negligence. The Company is not responsible for the failure of using the service due to the intentional or negligence of the user or member unless the user or member has an inevitable or legitimate reason. The Company is not responsible"
+                          "regarding the reliability and accuracy of information and data etc. published by the user or member in relation to the service unless intentional or with negligence. The Company is not obliged to intervene in transactions or disputes caused by the user or other members or others, and is not responsible for damages. The Company is not liable for damages incurred to the users or members regarding the use of the services provided. Unless, it is the company's intentional or negligence. The Company is not responsible when users or members did not earn expected profit or loss while using the Service. The Company is not responsible for the price fluctuations of digital assets etc. of the user and the member. The Company is not responsible for issues occurring with personal information management such as Google ID, Apple ID, password, email, mnemonic key, private key, etc. due to negligence of the user or member. The Company is not responsible if the function of the service cannot be used due to changes in electronic devices such as PCs and mobile devices, changes in mobile number, changes in the operating system (OS) version, changes in overseas roaming, and telecommunications company, unless it is the company's intentional or negligence. The Company is not responsible if the user or the member deleted the account information provided by the Company, unless it is the company's intentional or negligence. The Company is not responsible for the loss occurred during the service use by a guest who is not a member, unless it is the company's intentional or negligence.",
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: '\n\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '9. Others\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  TextSpan(
+                      text: '● Governing Law and Jurisdiction'
+                          "\nThese Terms of Service shall be governed by Republic of Korea law and shall be interpreted, governed and construed accordingly. User and member consent to designate the courts of Republic of Korea as the competent court for any disputes or lawsuits arising in relation to these Terms of Service or Privacy Policy."
+                          '\n\n● Language'
+                          "\n- User and member agree that even in the event that the translated version of the English Terms of Service is provided, the translated version is provided only for convenience of the user and member, and solely the English Terms of Service shall apply to the relation between the user and the Company."
+                          "\n- In the event of discrepancies between the English Terms of Service and any translated version of the Terms of Service, the English Terms of Service shall be prioritized."
+                          '\n\n● Possibility of Separation'
+                          "\nIf any part of these terms of service is found illegal, invalid, or unprecedented in relevant local laws or jurisdictions of related courts, the relevant provisions are abolished and the remaining terms and conditions are continuously valid.",
+                      style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(
+                      text: '\n\n',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                ]),
+              ),
             ],
           ),
         ),

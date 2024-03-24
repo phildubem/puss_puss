@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:puss_puss/features/screens/views/settings/inner_pages/edit_profile.dart';
 import 'package:puss_puss/features/screens/views/settings/widgets/header.dart';
 
 import '../../../../../common/widgets/appbar/appbar.dart';
@@ -17,7 +19,9 @@ class MSettingsSectionHeader extends StatelessWidget {
         children: [
           MAppBar(
             actions: [
-              TextButton(onPressed: () {}, child: Text('Edit'))
+              TextButton(
+                  onPressed: () => Get.to(() => ProfileScreen()),
+                  child: Text('Edit'))
             ],
           ),
           MSettingsHeader(),

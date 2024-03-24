@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "917601657897",
+    "project_id": "pusspuss-36652",
+    "storage_bucket": "pusspuss-36652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917601657897:android:3278c41f94e30ccd9fe838",
+        "android_client_info": {
+          "package_name": "com.example.puss_puss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917601657897-971he3gklac2a5262il5gfc3d7kqi4g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.puss_puss",
+            "certificate_hash": "44d04431cb2a4669c40d75c9b17e7abc71be9409"
+          }
+        },
+        {
+          "client_id": "917601657897-b4u4trldnltpv09gjkj0kvacmn3qjo3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPYlfC4ctz3sNbmeYPceYEA8WclOJD5e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917601657897-b4u4trldnltpv09gjkj0kvacmn3qjo3n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "917601657897-7a6e3rb2j1ff9rvjphv8dr9hjkukdcef.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pussPuss.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

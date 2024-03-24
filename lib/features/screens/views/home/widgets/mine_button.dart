@@ -18,6 +18,7 @@ class MMiningButton extends StatelessWidget {
       child: SlideAction(
         trackBuilder: (context, state) {
           return Container(
+            
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Msizes.nm),
               color: dark

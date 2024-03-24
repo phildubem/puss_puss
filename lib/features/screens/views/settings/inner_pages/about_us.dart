@@ -23,57 +23,60 @@ class AboutUsScreen extends StatelessWidget {
               TextSpan(
                   text:
                       "At Puss Puss, we've embarked on a unique crypto journey that marries the world of cryptocurrency with the playful rivalry between cats and dogs. We are a community-driven project that's all about having fun while making a positive impact on the lives of cats and dogs. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
                   text: ' \n',
                   style: Theme.of(context).textTheme.headlineSmall),
               TextSpan(
-                  text: 'Our Mission \n',
-                  style: Theme.of(context).textTheme.headlineSmall),
+                text: 'Our Mission \n',
+              ),
               TextSpan(
                   text:
                       "Our mission is simple yet powerful: to create a cryptocurrency that celebrates the joy of crypto while contributing to animal welfare. We're passionate about giving back and helping those who can't help themselves. That's why a portion of every Puss Puss transaction goes directly to support animal welfare charities. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
                   text: ' \n',
                   style: Theme.of(context).textTheme.headlineSmall),
               TextSpan(
-                  text: 'Community-First \n',
-                  style: Theme.of(context).textTheme.headlineSmall),
+                text: 'Community-First \n',
+              ),
               TextSpan(
                   text:
                       "Puss Puss thrives on our vibrant and supportive community. We're not just crypto enthusiasts; we're cat and dog lovers, meme aficionados, and supporters of charitable causes. Together, we're making a difference while having a great time. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
                   text: ' \n',
                   style: Theme.of(context).textTheme.headlineSmall),
               TextSpan(
-                  text: 'Transparency and Security \n',
-                  style: Theme.of(context).textTheme.headlineSmall),
+                text: 'Transparency and Security \n',
+              ),
               TextSpan(
                   text:
                       "We take security seriously. Puss Puss operates on a secure blockchain, and your data and privacy are our top priorities. Our transparent approach ensures that you can always track your Puss Puss transactions and contributions to our charity fund. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
                   text: ' \n',
                   style: Theme.of(context).textTheme.headlineSmall),
               TextSpan(
-                  text: 'Join Us \n',
-                  style: Theme.of(context).textTheme.headlineSmall),
+                text: 'Join Us \n',
+              ),
               TextSpan(
                   text:
                       "We invite you to join the Puss Puss community, whether you're a cat lover, a dog enthusiast, or someone who believes that crypto can be both entertaining and impactful. Together, we're turning your purrs and barks into positive change. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
                   text: ' \n',
                   style: Theme.of(context).textTheme.headlineSmall),
               TextSpan(
-                  text: 'Contact Us \n',
-                  style: Theme.of(context).textTheme.headlineSmall),
+                text: 'Contact Us \n',
+              ),
               TextSpan(
                   text:
                       "If you have questions, ideas, or simply want to connect with our team, don't hesitate to reach out. We're here to make your Puss Puss experience enjoyable and memorable. \n",
-                  style: Theme.of(context).textTheme.labelLarge),
+                  style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(
+                  text: ' \n',
+                  style: Theme.of(context).textTheme.headlineSmall),
             ]),
           ),
         ),

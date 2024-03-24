@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:puss_puss/features/auth/views/login/login.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/leaderboard.dart';
+import 'package:puss_puss/features/screens/views/settings/inner_pages/privacy.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/terms.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:puss_puss/features/screens/views/settings/inner_pages/about_us.dart';
@@ -56,13 +58,20 @@ class SettingsScreen extends StatelessWidget {
                       thickness: 0.2,
                       indent: 10,
                       endIndent: 20),
-                  MSettingsTiles(icon: Iconsax.translate, title: 'Language'),
+                  MSettingsTiles(
+                    icon: Iconsax.translate,
+                    title: 'Language',
+                    onTap: () {},
+                  ),
                   MSettingsTiles(
                       icon: Iconsax.task_square,
                       title: 'FAQ',
                       onTap: () => Get.to(() => FaqScreen())),
                   MSettingsTiles(
-                      icon: Iconsax.document_text, title: 'Privacy Policy'),
+                    icon: Iconsax.document_text,
+                    title: 'Privacy Policy',
+                    onTap: () => Get.to(() => PrivacyScreen()),
+                  ),
                   MSettingsTiles(
                     icon: Iconsax.document,
                     title: 'Terms of Service',
@@ -151,16 +160,31 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   */
                   MSettingsTiles(
-                    icon: Iconsax.mask_2,
+                    icon: Iconsax.moon, //mask  sun_1
                     title: 'Dark/Light Mode',
                     isTrailing: false,
-                    trailing: Switch(value: true, onChanged: (value) {}),
+                    trailing: Switch(
+                        value: true,
+                        onChanged: (value) {
+                          Get.changeTheme(
+                            Get.isDarkMode
+                                ? ThemeData.light()
+                                : ThemeData.dark(),
+                          );
+                        }),
                   ),
                   MSettingsTiles(
                     icon: Iconsax.profile_delete,
                     title: 'Delete Account',
                   ),
-                  SizedBox(height: 100),
+                  SizedBox(height: Msizes.sm),
+                  SizedBox(
+                      height: Msizes.sxxl,
+                      width: MHelperFunctions.screenWidth() * 0.85,
+                      child: OutlinedButton(
+                          onPressed: () => Get.offAll(() => LoginScreen()),
+                          child: Text('Logout'))),
+                  SizedBox(height: 120),
                 ],
               ),
             ),

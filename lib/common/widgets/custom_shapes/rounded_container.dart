@@ -39,8 +39,8 @@ class MRoundedContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(radius),
         color: showBg
             ? MHelperFunctions.isDarkMode(context)
-                ? MColors.primary.withOpacity(0.9)
-                : MColors.light.withOpacity(0.7)
+                ? MColors.primary.withOpacity(0.5)
+                : MColors.light.withOpacity(0.5)
             : Colors.transparent,
         border: showBorder ? Border.all(color: borderColor) : null,
       ),

@@ -19,6 +19,7 @@ class MTexts {
   static const String mContinue = 'Continue';
   static const String enter = 'Enter';
   static const String done = 'Done';
+  static const String changePP = 'Change Profile Picture';
 
   static const String slide = 'Slide to Start Mining';
   static const String mining = 'Mining Now';
