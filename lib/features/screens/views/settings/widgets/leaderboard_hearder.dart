@@ -45,7 +45,7 @@ class MleaderboardHeader extends StatelessWidget {
                   position: '2430',
                   altName: '@phildubem',
                   margin: 40,
-                  topPad: 45,
+                  topPad: 53,
                   radius: BorderRadius.only(
                       topLeft: Radius.circular(15),
                       topRight: Radius.circular(15),

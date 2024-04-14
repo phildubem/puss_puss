@@ -16,7 +16,7 @@ class MEarnMoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MHelperFunctions.isDarkMode(context);
     return SizedBox(
-      height: 176,
+      height: 185,
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: 3,
@@ -49,8 +49,7 @@ class MEarnMoreCard extends StatelessWidget {
                       right: 0,
                       child: Container(
                         height: 15,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: Msizes.xxs),
+                        padding: EdgeInsets.symmetric(horizontal: Msizes.xxs),
                         decoration: BoxDecoration(
                             color: dark
                                 ? MColors.white.withOpacity(0.3)
@@ -70,22 +69,18 @@ class MEarnMoreCard extends StatelessWidget {
                     ),
                   ]),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: Msizes.xxs),
-                  child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: dark
-                              ? Colors.deepPurple.withOpacity(0.6)
-                              : MColors.primary.withOpacity(0.8),
-                          padding:
-                              EdgeInsets.symmetric(horizontal: Msizes.nm),
-                          side: BorderSide.none),
-                      child: Text(
-                        MTexts.claim,
-                        style: TextStyle(color: Colors.white),
-                      )),
-                ),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: dark
+                            ? Colors.deepPurple.withOpacity(0.6)
+                            : MColors.primary.withOpacity(0.8),
+                        padding: EdgeInsets.symmetric(horizontal: Msizes.nm),
+                        side: BorderSide.none),
+                    child: Text(
+                      MTexts.claim,
+                      style: TextStyle(color: Colors.white),
+                    )),
               ]),
             ),
           );

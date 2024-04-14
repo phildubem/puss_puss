@@ -8,13 +8,13 @@ class SuccesPage extends StatelessWidget {
     super.key,
     required this.title,
     required this.subTitle,
-    this.onPressed, required this.img, required this.button, this.widget,
+    this.onPressed, required this.img, this.button, this.widget,
   });
 
   final String img;
   final String title;
   final String subTitle;
-  final String button;
+  final String? button;
   final VoidCallback? onPressed;
   final Widget? widget;
 
@@ -39,7 +39,7 @@ class SuccesPage extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: onPressed, child: Text(button))),
+                  onPressed: onPressed, child: Text(button!))),
           SizedBox(height: Msizes.md),
           SizedBox(
               width: double.infinity,

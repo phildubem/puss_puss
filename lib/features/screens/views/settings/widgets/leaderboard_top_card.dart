@@ -15,7 +15,8 @@ class MTopScoreCard extends StatelessWidget {
     required this.name,
     required this.position,
     required this.altName,
-    required this.margin, this.topPad = 40,
+    required this.margin,
+    this.topPad = 40,
   });
 
   final BorderRadiusGeometry? radius;
@@ -61,7 +62,7 @@ class MTopScoreCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -10,
+            top: -5,
             child: Text(
               topText,
               style: Theme.of(context)

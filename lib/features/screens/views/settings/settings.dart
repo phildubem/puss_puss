@@ -179,7 +179,7 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   SizedBox(height: Msizes.sm),
                   SizedBox(
-                      height: Msizes.sxxl,
+                      height: Msizes.sxxxl,
                       width: MHelperFunctions.screenWidth() * 0.85,
                       child: OutlinedButton(
                           onPressed: () => Get.offAll(() => LoginScreen()),

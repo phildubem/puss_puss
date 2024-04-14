@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:puss_puss/features/auth/views/login/login.dart';
-import 'package:puss_puss/features/auth/views/verify+/success.dart';
+import 'package:puss_puss/data/repositories/auth_repo.dart';
+import 'package:puss_puss/features/auth/controllers/verify_email_controller.dart';
 import 'package:puss_puss/utils/constants/text_strings.dart';
 import 'package:puss_puss/utils/helpers/helper_function.dart';
 
@@ -11,18 +11,22 @@ import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
-  const VerifyEmailScreen({super.key});
+  const VerifyEmailScreen({super.key, this.email});
+
+  final String ? email;
 
   @override
   Widget build(BuildContext context) {
     final bool dark = MHelperFunctions.isDarkMode(context);
+
+    final controller = Get.put(VerifyEmailController());
 
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-              onPressed: () => Get.offAll(() => LoginScreen()),
+              onPressed: () => AuthRepo.instance.logout(),
               icon: Icon(Iconsax.close_square),
               color: dark ? MColors.white : MColors.primary)
         ],
@@ -44,20 +48,20 @@ class VerifyEmailScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyMedium),
               SizedBox(height: Msizes.md),
-              Text('hello@pusspuss.com ',
+              Text(email ?? '',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodySmall),
               SizedBox(height: Msizes.xl),
               SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () => Get.to(() => SuccessScreen()),
+                      onPressed: () => controller.checkEmailVerificationStatus(),
                       child: Text(MTexts.mContinue))),
               SizedBox(height: Msizes.md),
               SizedBox(
                   width: double.infinity,
                   child: OutlinedButton(
-                      onPressed: () {}, child: Text(MTexts.resendEmail))),
+                      onPressed: () => controller.sendEmailVerification(), child: Text(MTexts.resendEmail))),
               SizedBox(height: Msizes.nm),
             ],
           ),
